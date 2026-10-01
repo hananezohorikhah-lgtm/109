@@ -1,0 +1,23 @@
+۹_ تابع ( )average را که میانگین حداکثر چهار عدد را بر می گرداند، نوشته و آزمایش کنید
+float average(float x1, float x2 =0, float x3=0, float x4=0)
+
+پاسخ:
+#include <iostream>
+using namespace std;
+
+float average(float x1, float x2 = 0, float x3 = 0, float x4 = 0)
+{
+    int n = 1;
+    if (x2 != 0) n++;
+    if (x3 != 0) n++;
+    if (x4 != 0) n++;
+
+    return (x1 + x2 + x3 + x4) / n;
+}
+
+int main()
+{
+    cout << average(10, 20, 30) << endl;
+
+    return 0;
+}
